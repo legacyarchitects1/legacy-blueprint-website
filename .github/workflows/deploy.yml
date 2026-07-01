@@ -1,5 +1,4 @@
 name: Deploy Legacy Blueprint OS
-
 on:
   push:
     branches:
@@ -8,29 +7,19 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: 'npm'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build site
-        run: npm run build
-
-      - name: Deploy to Cloudflare Pages
+      - run: npm install
+      - run: npm run build
+      - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: 'legacy-blueprint-website'
-          directory: 'build'
+          projectName: legacy-blueprint-website
+          directory: build
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
