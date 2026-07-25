@@ -25,7 +25,7 @@ export default function Home() {
       await supabase.auth.signInWithOAuth({
         provider: 'github',
         options: {
-          redirectTo: `${window.location.origin}/auth/callback`,
+          redirectTo: `${window.location.origin}/console/auth/callback`,
         },
       });
     } catch (error) {

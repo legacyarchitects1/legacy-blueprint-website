@@ -1,1 +1,141 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Legacy Blueprint — AI &amp; Marketing Help for Small Businesses</title>
+<meta name="description" content="The Legacy Blueprint builds done-for-you AI automations, content, and lead follow-up for small businesses — plus a community, learning center, and wellness space.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0F2336;--ink2:#0A1A2A;--teal:#2E7380;--teal-lt:#7FD8C4;--gold:#B5915A;--line:#26496A;--mute:#8aa0b3;--body:#cdd9e2}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--ink2);color:var(--body);line-height:1.6}
+h1,h2,h3{font-family:Montserrat,sans-serif;color:#fff}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{font-family:Montserrat,sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--teal-lt)}
+a{color:var(--teal-lt);text-decoration:none}
+header{padding:18px 0;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30;background:rgba(10,26,42,.85);backdrop-filter:blur(8px)}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px}
+.brand .name{font-family:Montserrat,sans-serif;font-weight:900;font-size:.95rem;color:#fff;line-height:1;letter-spacing:.04em}
+.brand .name small{display:block;color:var(--teal-lt);font-size:.6rem;letter-spacing:.22em;margin-top:2px}
+.navlinks{display:flex;gap:22px;align-items:center;font-size:.88rem;font-weight:600}
+.hero{text-align:center;padding:70px 0 34px}
+.hero h1{font-weight:900;font-size:clamp(2rem,5vw,3.1rem);line-height:1.08;margin:14px 0 14px;background:linear-gradient(90deg,#fff,var(--teal-lt));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{max-width:58ch;margin:0 auto;font-size:1.05rem}
+.btnrow{display:flex;gap:14px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+.btn{display:inline-block;font-family:Montserrat,sans-serif;font-weight:800;font-size:.92rem;padding:13px 24px;border-radius:8px;background:var(--gold);color:#0A1A2A;border:2px solid var(--gold);cursor:pointer;text-align:center}
+.btn.ghost{background:transparent;color:#fff;border:2px solid var(--line)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:50px 0}
+.card{border:1px solid var(--line);border-radius:16px;background:linear-gradient(165deg,#11304a,#0d2030);padding:28px 24px;display:flex;flex-direction:column}
+.card .tag{font-family:Montserrat,sans-serif;font-weight:700;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.card h2{font-size:1.28rem;margin:6px 0 8px}
+.card .price{font-family:Montserrat,sans-serif;font-weight:800;color:var(--teal-lt);margin:6px 0 12px}
+.card ul{list-style:none;margin:0 0 18px;flex:1}
+.card li{padding-left:21px;position:relative;margin-bottom:7px;font-size:.92rem}
+.card li::before{content:"";position:absolute;left:2px;top:9px;width:8px;height:8px;border:2px solid var(--teal-lt);border-radius:2px;transform:rotate(45deg)}
+section.more{padding:20px 0 50px}
+.more h2{font-size:1.6rem;margin-bottom:10px}
+.linkgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:20px}
+.linkcard{border:1px solid var(--line);border-radius:14px;padding:22px;background:rgba(127,216,196,.05)}
+.linkcard h3{font-size:1.1rem;margin-bottom:6px}
+.linkcard p{font-size:.9rem;margin-bottom:10px}
+.note{font-size:.8rem;color:var(--mute);line-height:1.7;max-width:760px;margin:30px auto 0;text-align:center}
+footer{padding:30px 0;border-top:1px solid var(--line);font-size:.84rem;color:var(--mute);text-align:center;margin-top:20px}
+@media (max-width:720px){.cards{grid-template-columns:1fr}.linkgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <div class="brand">
+    <svg width="34" height="34" viewBox="0 0 200 200" aria-hidden="true">
+      <circle cx="100" cy="100" r="85" fill="none" stroke="#7FD8C4" stroke-width="1.6"/>
+      <path d="M58,76 L108,76 L108,58 L172,100 L108,142 L108,124 L58,124 L74,100 Z" fill="none" stroke="#fff" stroke-width="5" stroke-linejoin="round"/>
+      <g fill="none" stroke="#7FD8C4" stroke-width="2"><path d="M106,90 L122,90 L130,82"/><path d="M106,100 L134,100"/><path d="M106,110 L124,110 L132,118"/></g>
+      <g fill="#B5915A"><circle cx="122" cy="64" r="3"/><circle cx="122" cy="136" r="3"/></g>
+    </svg>
+    <div class="name">LEGACY<small>BLUEPRINT</small></div>
+  </div>
+  <div class="navlinks">
+    <a href="how-it-works.html">How it works</a>
+    <a href="community.html">Community</a>
+  </div>
+</div></header>
+
+<div class="hero wrap">
+  <span class="eyebrow">AI &amp; marketing help for small businesses</span>
+  <h1>Get your time back. We'll build the automations.</h1>
+  <p>Free AI-readiness assessment, done-for-you automations, and honest advice — no guarantees, no jargon, just a plan built around how your business actually runs.</p>
+  <div class="btnrow">
+    <a class="btn" href="mailto:taylormadesalescorp@gmail.com?subject=Free%20AI%20assessment">Get your free AI assessment</a>
+    <a class="btn ghost" href="how-it-works.html">See how it works</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="cards">
+    <div class="card">
+      <span class="tag">Starter</span>
+      <h2>One automation, built for you</h2>
+      <div class="price">$150 setup + $49/mo</div>
+      <ul>
+        <li>One repetitive task automated end-to-end</li>
+        <li>Built around your biggest time-drain</li>
+        <li>No long contracts</li>
+      </ul>
+      <a class="btn" href="mailto:taylormadesalescorp@gmail.com?subject=Starter%20plan" style="width:100%">Ask about Starter</a>
+    </div>
+    <div class="card">
+      <span class="tag">Growth</span>
+      <h2>Several automations, connected</h2>
+      <div class="price">$250 setup + $79/mo</div>
+      <ul>
+        <li>Leads, reminders, and admin talking to each other</li>
+        <li>Built around your top goals</li>
+        <li>Grows as you add more</li>
+      </ul>
+      <a class="btn" href="mailto:taylormadesalescorp@gmail.com?subject=Growth%20plan" style="width:100%">Ask about Growth</a>
+    </div>
+    <div class="card">
+      <span class="tag">Full Buildout</span>
+      <h2>A custom system, top to bottom</h2>
+      <div class="price">$1,500–$4,000</div>
+      <ul>
+        <li>Scoped to your full operation</li>
+        <li>AI, automations, and reporting in one place</li>
+        <li>Priced by scope, not a flat rate</li>
+      </ul>
+      <a class="btn" href="mailto:taylormadesalescorp@gmail.com?subject=Full%20Buildout" style="width:100%">Talk about a Buildout</a>
+    </div>
+  </div>
+</div>
+
+<section class="more"><div class="wrap">
+  <span class="eyebrow">Beyond the services</span>
+  <h2>There's a whole platform behind this.</h2>
+  <div class="linkgrid">
+    <div class="linkcard">
+      <h3>How it works</h3>
+      <p>An interactive look at the AI agents and infrastructure that power every automation we build.</p>
+      <a href="how-it-works.html">Explore the system &rarr;</a>
+    </div>
+    <div class="linkcard">
+      <h3>Community</h3>
+      <p>A learning center, a wellness lab, and done-for-you lead follow-up — for people building lasting wealth.</p>
+      <a href="community.html">Join the community &rarr;</a>
+    </div>
+  </div>
+</div></section>
+
+<p class="note">The Legacy Blueprint provides education, tools, and services. We do not guarantee income, results, or sales — outcomes vary. General information only, not financial, legal, or tax advice. Separate business from Zero Apex Wealth Matrix.</p>
+
+<footer><div class="wrap">&copy; <span id="yr"></span> The Legacy Blueprint · <a href="how-it-works.html">How it works</a> · <a href="community.html">Community</a></div></footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

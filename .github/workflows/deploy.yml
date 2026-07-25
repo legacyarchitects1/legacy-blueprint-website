@@ -18,11 +18,17 @@ jobs:
         env:
           NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
           NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+      - name: Assemble combined site
+        run: |
+          mkdir -p site_dist
+          cp index.html community.html how-it-works.html site_dist/
+          mkdir -p site_dist/console
+          cp -r out/. site_dist/console/
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: legacy-blueprint-website
-          directory: out
+          directory: site_dist
           githubToken: ${{ secrets.GITHUB_TOKEN }}
