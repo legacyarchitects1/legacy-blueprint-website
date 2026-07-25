@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { createClient } from '@supabase/supabase-js';
 
 const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL || '',
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''
+  process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co',
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-anon-key'
 );
 
 export default function Home() {
@@ -71,12 +72,12 @@ export default function Home() {
             >
               Sign Out
             </button>
-            <a
+            <Link
               href="/console"
               className="block text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200"
             >
-              📊 Owner's Console
-            </a>
+              📊 Owner&apos;s Console
+            </Link>
           </div>
         ) : (
           <button

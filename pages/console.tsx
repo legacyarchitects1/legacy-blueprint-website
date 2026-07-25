@@ -5,7 +5,7 @@ export default function Console() {
     <div className="min-h-screen bg-gradient-to-br from-purple-900 to-black text-white">
       <nav className="bg-black bg-opacity-50 border-b border-purple-700">
         <div className="max-w-7xl mx-auto px-4 py-6">
-          <h1 className="text-3xl font-bold">🖥️ Owner's Console</h1>
+          <h1 className="text-3xl font-bold">🖥️ Owner&apos;s Console</h1>
           <p className="text-purple-300 mt-1">Mission Control for Legacy Blueprint OS</p>
         </div>
       </nav>
